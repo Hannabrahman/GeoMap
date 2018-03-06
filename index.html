@@ -163,7 +163,7 @@ function updateColor(){
       }
         else{ color.range(d3.schemeOrRd[9])}
     
-d3.json(currentDataset, function(error, topology) {
+d3.json("ka-merge-topo.json", function(error, topology) {
       if (error) throw error;
   svg.append("g")
     .selectAll("path")
